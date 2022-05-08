@@ -1,0 +1,33 @@
+Vous jouez contre un ordinateur
+
+<!-- colonne des choix du joueur -->
+<div id="row" class="row">
+  <DIV class="col-sm">
+    <img id="Ciseaux" (click)="Check('Ciseaux')" src="../../assets/ciseaux.png" alt="">
+    <br>
+    <img id="Pierre" class="pierre" (click)="Check('Pierre')" src="../../assets/pierre.png" alt="">
+    <div class="col-dot">
+      <div class="snippet" data-title=".dot-flashing">
+        <div class="stage">
+          <div id="dot" class="dot-flashing hidden"></div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <img id="Papier" (click)="Check('Papier')" src="../../assets/feuille.png" alt="">
+    <br>
+  </DIV>
+</div>
+
+<!-- Image du bot -->
+<div class="col-bot"><img  id="bot" class="" [src]="cheminImage" /></div>
+
+<!-- Le message des résultat (Gagné !, Perdue !, Égalité !) -->
+<div class="msg-resultat" > {{Resultat}} </div>
+
+<!-- Affiche le nombre de fois qu'on gagne d'affilé -->
+Série de victoires: {{victoire}}
+
+<!-- Les boutons pour relancer une partie ou revenir à l'accueil -->
+<div class="btn-rafraichir"><button onClick="history.go(0)"class="btn btn-dark">Relancer une partie</button></div>
+<div class="btn-accueil"><button routerLink="/" class="btn btn-dark">Accueil</button></div>

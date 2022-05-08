@@ -1,0 +1,136 @@
+.col-sm{
+    position: absolute;
+    top: 10%;
+    right: 30%;
+} 
+
+.col-sm2{
+  position: absolute;
+  top: 10%;
+  left: 30%;
+ }
+
+img{
+   cursor: pointer;
+   width: 100px;
+   margin-top: 10px;
+}
+  
+.VS{
+  position: absolute;
+  top: 19%;
+  left: 41%;
+  width: 11em;
+}
+
+#Pierre1{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#Pierre2{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+  
+.hidden{
+  visibility: hidden;
+}
+
+.choix{  
+  
+}
+  
+.div{
+  pointer-events:none;
+}
+
+.flitre{
+  filter: contrast(1%);
+  -webkit-filter: contrast(1%);
+}
+
+.col-dot{
+  position: absolute;
+  top: 70%;
+  left: 10.5%;
+}
+  
+.msg-resultat1{
+  position: absolute;
+  top: 75%;
+  right: 30%;
+  text-align: center;
+  font-size: 1em;
+}  
+
+.msg-resultat2{
+  position: absolute;
+  top: 75%;
+  left: 30%;
+  text-align: center;
+  font-size: 1em;
+}
+  
+.btn-rafraichir{
+  right: 45.25%;
+  position: absolute;
+  top: 80%;
+}
+
+.btn-accueil{
+  right: 47.5%;
+  position: absolute;
+  top: 86%;
+}
+  
+.dot-flashing {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #2f2f2f;
+  color: #2f2f2f;
+  animation: dotFlashing 1s infinite linear alternate;
+  animation-delay: .5s;
+  margin-left: 750px;
+}
+    
+.dot-flashing::before, .dot-flashing::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+    
+.dot-flashing::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #2f2f2f;
+  color: #2f2f2f;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 0s;
+}
+    
+.dot-flashing::after {
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #2f2f2f;
+  color: #2f2f2f;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 1s;
+}
+    
+@keyframes dotFlashing {
+  0% {
+    background-color: #2f2f2f;
+  }
+  50%,
+  100% {
+    background-color: #ebe6ff;
+  }
+}
