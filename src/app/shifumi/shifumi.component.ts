@@ -10,6 +10,7 @@ export class ShifumiComponent implements OnInit {
 
   ResultatJoueur1 = "";
   ResultatJoueur2 = "";
+  @Input() pseudo! : string;
 
 
   cheminImage: any = "../../assets/bot.png";

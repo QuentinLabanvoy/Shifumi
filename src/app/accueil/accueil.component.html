@@ -8,8 +8,9 @@
 
     <button (click)="versBot()" class="btn btn-light">Jouer contre
         l'ordinateur</button>
-    <br>
-    <button (click)="versShifumi()" class="btn btn-light">Jouer contre un joueur</button>
+
+        <input type="text"  #pseudo>
+    <button (click)="versShifumi(pseudo.value)" class="btn btn-light">Jouer contre un joueur</button>
     <br>
 
 

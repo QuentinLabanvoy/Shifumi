@@ -8,6 +8,7 @@ import { ShifumiComponent } from './shifumi/shifumi.component';
 import { ROUTING } from './app.rooting';
 import { BotComponent } from './bot/bot.component';
 import { AccueilComponent } from './accueil/accueil.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { AccueilComponent } from './accueil/accueil.component';
     BrowserModule,
     NgbModule,
     AppRoutingModule,
+    FormsModule,
     ROUTING
   ],
   providers: [],

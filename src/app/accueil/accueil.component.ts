@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,11 +10,18 @@ export class AccueilComponent implements OnInit {
 
   title = 'projet';
   constructor(private router:Router){}
+
+
+@Output()  sendRequestofather = new EventEmitter<string>(); 
+
+
   ngOnInit(): void {
    
   }
-  versShifumi(){
+  versShifumi(pseudo : string){
+    this.sendRequestofather.emit(pseudo);
     this.router.navigate(['shifumi']);
+    
   }
   versBot(){
     this.router.navigate(['bot']);
