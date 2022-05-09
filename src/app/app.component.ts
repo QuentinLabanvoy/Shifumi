@@ -10,9 +10,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   pseudo: any;
   send(pseudo: any){
-    this.pseudo = pseudo;
-    console.log(this.pseudo);
-    console.log("toto");
+    this.pseudo.push(pseudo);
+
   }
 }
 
