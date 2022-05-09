@@ -10,12 +10,16 @@ export class ShifumiComponent implements OnInit {
 
   ResultatJoueur1 = "";
   ResultatJoueur2 = "";
-  @Input() pseudo! : any;
 
-  send(pseudo: any){
-    this.pseudo.push(pseudo);
-  }
+pseudo1!: string;
+pseudo2!: string;
+Joueur1! : string;
+Joueur2! : string;
+send(Joueur1: string,Joueur2: string){
+  this.pseudo1 = Joueur1;
+  this.pseudo2 = Joueur2;
 
+}
   cheminImage: any = "../../assets/bot.png";
   constructor(private shifumiService: shifumiService) { }
 

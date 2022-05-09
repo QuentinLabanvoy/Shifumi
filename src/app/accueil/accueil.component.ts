@@ -18,11 +18,9 @@ export class AccueilComponent implements OnInit {
   ngOnInit(): void {
    
   }
-  versShifumi(Joueur1 : any,Joueur2 : any){
-    this.sendRequestofather.emit(Joueur1);
+  versShifumi(){
     
     this.router.navigate(['shifumi']);
-   console.log(Joueur1,Joueur2);
 
   }
   versBot(){
