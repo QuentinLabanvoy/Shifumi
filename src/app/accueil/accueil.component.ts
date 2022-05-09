@@ -12,16 +12,17 @@ export class AccueilComponent implements OnInit {
   constructor(private router:Router){}
 
 
-@Output()  sendRequestofather = new EventEmitter<string>(); 
+@Output()  sendRequestofather = new EventEmitter(); 
 
 
   ngOnInit(): void {
    
   }
-  versShifumi(pseudo : string){
+  versShifumi(pseudo : any){
     this.sendRequestofather.emit(pseudo);
     this.router.navigate(['shifumi']);
-    
+   console.log(pseudo);
+
   }
   versBot(){
     this.router.navigate(['bot']);

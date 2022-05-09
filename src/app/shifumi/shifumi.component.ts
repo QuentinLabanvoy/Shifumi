@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output, Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { shifumiService } from '../shifumi.service';
 
 @Component({
@@ -10,7 +10,7 @@ export class ShifumiComponent implements OnInit {
 
   ResultatJoueur1 = "";
   ResultatJoueur2 = "";
-  @Input() pseudo! : string;
+  @Input() pseudo! : any;
 
 
   cheminImage: any = "../../assets/bot.png";

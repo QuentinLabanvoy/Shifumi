@@ -8,9 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  pseudo = "";
-  send(pseudo: string){
+  pseudo: any;
+  send(pseudo: any){
     this.pseudo = pseudo;
+    console.log(this.pseudo);
+    console.log("toto");
   }
 }
 
